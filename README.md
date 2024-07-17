@@ -1,14 +1,30 @@
-Frontend teil der WeatherWorks Wetter App.
-Die Datenverwaltung läuft einmal mit einer eigenen Zustandsverwaltung dem store.ts und dem Backend durch axios Aufrufe
-Die App Hat 4 Base Komponenten die Sich um die Optik und Wetterdatenbereitstellung kümmern: 
-WeatherSearch kümmert sich um die Suchfunktionalität
-WeatherInfo: kümmert sich um Basis Infos wie die Windgeschwindigkeit, Luftfeuchtigkeit und wie bewölkt es ist
-WeatherAnimate: kümmert sich um die Animationen der App die mit den wetterdaten korrespondiert
-WeatherMain: Kümmert sich um die Detaillieren Wetter infos wie der Temperatur und weitern Wetterdaten
+# Weatherworks Vue JS Weather App
 
-Die Haupt Komponenten
-WeatherEntry, WeatherStartpage und WeatherAccountManager sind die Haupt views der App und zeigen Die login Seite, Die Mainpage und die User Account Seite und binden die 
-Basis Komponenten ein
+This is the frontend component of the Weatherworks Vue JS Weather App, 
+which is architected with a frontend component and a backend component linked to a PostgreSQL database.
+[WeatherWorks-Backend Repository](https://github.com/Ann-Jacqueline/WeatherWorks-Backend).
 
-Credential Handling: Der Schlüssel zu der API ist in beiden Environments verschlüsselt und der Schlüssel würde auf render 
-hinterlegt.
+## About the Project
+
+The app was developed by myself, Ann-Jacqueline Viola Kaldjob, 
+as part of my Web Technologies module of the third semester 
+at the University of Applied Sciences for Technology and Economics Berlin (HTW Berlin).
+
+## Functionality
+
+The central functionality of this Vue JS component includes:
+- Data retrieval
+- Data flow management
+- Data exchange with the backend and the PostgreSQL database using axios requests
+
+## Data Management
+
+Responsible for this frontend-side management is the management store, which:
+- Centrally supplies all Vue components with data
+- Extracts data
+- Exchanges data with the backend via POST, GET, or DELETE requests
+
+This creates an interlinked system where data management functions dually, 
+with the frontend-side managed by the management store and the backend-side handled 
+by the PostgreSQL database.
+
