@@ -2,7 +2,7 @@
 
 This is the frontend component of the Weatherworks Vue JS Weather App, 
 which is architected with a frontend component and a backend component linked to a PostgreSQL database.
-[WeatherWorks-Backend Repository](https://github.com/Ann-Jacqueline/WeatherWorks-Backend).
+[WeatherWorks-Backend Repository](https://github.com/Ann-Jacqueline/backend-webtech).
 
 ## About the Project
 
