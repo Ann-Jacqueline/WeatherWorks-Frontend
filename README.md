@@ -38,8 +38,11 @@ The management store is responsible for frontend-side data management. It:
 - Extracts and processes data.
 - Exchanges data with the backend via POST, GET, or DELETE requests.
 
-This creates an interlinked system where data management is handled both on the frontend and backend sides, ensuring seamless data synchronization between the Vue JS application and the PostgreSQL database.
-
 ---
+This creates an interlinked system where data management is handled both on the 
+frontend and backend sides, ensuring seamless data synchronization between 
+the Vue JS application and the PostgreSQL database.
+
+
 
 
