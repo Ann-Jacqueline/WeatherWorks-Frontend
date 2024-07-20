@@ -2,7 +2,7 @@
 
 ![WeatherWorks](https://github.com/Ann-Jacqueline/backend-webtech/blob/main/WeatherWorks.gif)
 
-This is the frontend component of the Weatherworks Vue JS Weather App, designed to provide a seamless user interface for weather data interaction. The app features a sophisticated architecture with a frontend component and a backend component linked to a PostgreSQL database.
+This is the frontend component of the Weatherworks Vue JS Weather App, designed to provide a seamless user interface for weather data interaction utilizing a Management store.ts to productivly comunicated to the WeatherWorks backend component that is linked  to a PostgreSQL database.
 
 [WeatherWorks-Backend Repository](https://github.com/Ann-Jacqueline/backend-webtech)
 
@@ -20,9 +20,11 @@ The central functionality of this Vue JS component includes:
   - Save user input through a city search function.
   - Pin a default city and change it as needed.
   - Manage locations by adding or deleting cities.
+    
 - **Settings:** Allow users to set unit preferences (°C or °F).
 - **Error Handling:** Handle incorrect city searches gracefully.
 - **Multiuser Functionality:** Enable login and logout features for multiple users.
+  
 - **Data Interaction:**
   - Data retrieval.
   - Data flow management.
@@ -40,4 +42,4 @@ This creates an interlinked system where data management is handled both on the 
 
 ---
 
-By providing a clear structure and detailed descriptions, this README will help users and contributors understand the purpose, functionality, and technical details of your project. If you have any additional information or specifics you'd like to include, feel free to add them!
+
