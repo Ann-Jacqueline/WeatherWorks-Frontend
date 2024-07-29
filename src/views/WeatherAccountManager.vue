@@ -299,11 +299,17 @@ onBeforeUnmount(() => {
   left: 5vw; /* Links bündig mit Abstand vom Rand */
 }
 .user-name {
-  color: #333;
-  font-size: 2.5vh; /* Schriftgröße abhängig von der Bildschirmhöhe */
+  width: 15vw;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(21, 20, 20);
+  text-decoration: none;
+  border-radius: 5px;
   position: fixed;
-  top: 13vh;
-  left:6vw;
+  left:0;
+  top:12.5vh;
+  z-index:101;
+  font-size:larger;
+  text-align: center; /* Text mittig zentrieren */
 }
 
 

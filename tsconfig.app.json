@@ -4,7 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom","es2015"],
     "jsx": "preserve",
     "allowJs": true, // Erlaubt JavaScript Dateien im TypeScript-Projekt
     "sourceMap": true,

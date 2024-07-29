@@ -61,7 +61,7 @@ const navigateToWeather = async () => {
 
       if (loginResponse.status === 201) { // Überprüfung auf erfolgreiche Session-Erstellung
         console.log('Login successful');
-        router.push('/weather');
+        await router.push('/weather');
       }
     } catch (error) {
       const axiosError = error as AxiosError;
@@ -81,24 +81,22 @@ defineExpose({
 
 
 
-
-
-
 <template>
   <div class="start-page">
     <div class="fog-animation"></div>
     <input v-model="userName" placeholder="Enter your name here" class="name-input"/>
     <button @click="navigateToWeather" class="next-button">→</button>
     <div class="footer-text">
-      <a href="https://github.com/Ann-Jacqueline/frontend-webtech/" target="_blank" class="link">
-        <span>
-          Github Repository WebTech Frontend<br>
-          Dozenten: Wider/Larisch
+      <a href="https://github.com/Ann-Jacqueline/WeatherWorks-Frontend" target="_blank" class="link">
+        <span class="github-link">
+          <i class="bi bi-github"></i> Github Repository Ann-Jacqueline Kaldjob: WeatherWorks-Frontend<br>
+         Professors: Prof. Dr. Arif Wider/ M.Sc Lucas Larisch
         </span>
       </a>
     </div>
   </div>
 </template>
+
 
 <style scoped lang="less">
 .start-page {
@@ -127,6 +125,13 @@ defineExpose({
 
   .name-input, .next-button {
     z-index: 2;
+  }
+
+  .github-link{
+    background: rgba(80, 76, 76, 0.25);
+    border-radius: 10px;
+    color:#ffffff;
+    font-weight: lighter;
   }
 
   .name-input {
